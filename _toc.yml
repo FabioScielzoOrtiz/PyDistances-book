@@ -2,8 +2,4 @@ format: jb-book
 root: markdowns/intro
 chapters:
   - file: notebooks/PyDistances_usage
-    title: PyDistances Usage
-  - file: notebooks/another_chapter
-    title: Another Chapter
   - file: markdowns/conclusion
-    title: Conclusion

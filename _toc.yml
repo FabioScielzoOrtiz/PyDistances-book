@@ -4,5 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: conclusion
+- file: contributions
+- file: modules
 

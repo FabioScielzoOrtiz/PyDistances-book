@@ -1,5 +1,4 @@
 format: jb-book
 root: intro
 chapters:
-  - file: notebooks/PyDistances_usage
-  - file: markdowns/conclusion
+  - file: conclusion

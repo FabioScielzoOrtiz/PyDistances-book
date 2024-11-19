@@ -1,8 +1,5 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
-root: markdowns\intro
+root: markdowns/intro
 chapters:
-- file: PyDistances_usage
+- file: notebooks/PyDistances_usage
 

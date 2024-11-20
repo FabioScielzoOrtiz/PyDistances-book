@@ -18,7 +18,7 @@ M: the Euclidean distance matrix between the rows of `X`.
 
 #### Example
 ```python
-import pandas as 
+import pandas as pd
 from PyDistances.quantitative import euclidean_dist_matrix
 
 data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo/refs/heads/main/data/madrid_houses_processed.csv"

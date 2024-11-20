@@ -24,8 +24,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
  
 euclidean_dist_matrix(X=data[quant_cols])
 ```
@@ -107,8 +106,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
    
 minkowski_dist_matrix(X=data[quant_cols], q=1)
 ```
@@ -122,7 +120,7 @@ array([[     0.,  44907.,  59278., ..., 595114., 610231., 339009.],
        [339009., 294104., 279775., ..., 256105., 271222.,      0.]])
 ```
 
-### `minkowski_dist`
+## `minkowski_dist`
 
 
 ```
@@ -149,8 +147,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 
 xi = data[quant_cols].iloc[2,:]
 xr = data[quant_cols].iloc[10,:]
@@ -162,7 +159,7 @@ minkowski_dist(xi=xi, xr=xr, q=1)
 26272.0
 ```
 
-### `canberra_dist_matrix`
+## `canberra_dist_matrix`
 
 ```
 Calculates the Canberra distance matrix for a data matrix using SciPy.
@@ -176,7 +173,7 @@ Returns (outputs)
 M: the Canberra distance matrix between the rows of `X`.
 ```
 
-#### Example
+### Example
 
 
 ```python
@@ -187,8 +184,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 
 canberra_dist_matrix(X=data[quant_cols])
 ```
@@ -208,7 +204,7 @@ array([[0.        , 0.45371051, 0.78164852, ..., 1.90887959, 2.75277838,
         0.        ]])
 ```
 
-### `canberra_dist`
+## `canberra_dist`
 
 ```
 Calculates the Canberra distance between a pair of vectors.
@@ -222,7 +218,7 @@ Returns (outputs)
 The Canberra distance between the observations `xi` and `xr`.
 ```
 
-#### Example
+### Example
 
 
 ```python
@@ -233,8 +229,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 
 xi = data[quant_cols].iloc[2,:]
 xr = data[quant_cols].iloc[10,:]
@@ -245,7 +240,7 @@ canberra_dist(xi=xi, xr=xr)
 0.25345926746669145
 ```
 
-### `pearson_dist_matrix`
+## `pearson_dist_matrix`
 
 ```
 Calculates the Pearson distance matrix for a data matrix using SciPy.
@@ -259,7 +254,7 @@ Returns (outputs)
 M: the Pearson distance matrix between the rows of X.
 ```
 
-#### Example
+### Example
 
 
 ```python
@@ -270,8 +265,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 
 pearson_dist_matrix(X=data[quant_cols])
 ```
@@ -291,7 +285,7 @@ array([[0.        , 0.66557805, 0.73750837, ..., 1.81426832, 3.76742474,
         0.        ]])
 ```
 
-### `mahalanobis_dist_matrix`
+## `mahalanobis_dist_matrix`
 
 ```
 Calculates the Mahalanobis distance matrix for a data matrix using SciPy.
@@ -305,7 +299,7 @@ Returns (outputs)
 M: the Mahalanobis distance matrix between the rows of X.
 ```
 
-#### Example
+### Example
 
 
 ```python
@@ -316,8 +310,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 
 mahalanobis_dist_matrix(X=data[quant_cols])
 ```
@@ -337,7 +330,7 @@ array([[0.        , 0.98305366, 1.35352819, ..., 1.51225082, 2.9059013 ,
         0.        ]])
 ```
 
-### `mahalanobis_dist`
+## `mahalanobis_dist`
 
 
 ```
@@ -354,7 +347,7 @@ The Mahalanobis distance between the observations `xi` and `xr`.
 ```
 
 
-#### Example
+### Example
 
 
 ```python
@@ -365,8 +358,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 
 xi = data[quant_cols].iloc[2,:]
 xr = data[quant_cols].iloc[10,:]
@@ -379,7 +371,7 @@ mahalanobis_dist(xi=xi, xr=xr, S=S)
 20524268507.123516
 ```
 
-### `robust_maha_dist_matrix`
+## `robust_maha_dist_matrix`
 
 
 ```
@@ -396,7 +388,7 @@ M: the Robust Mahalanobis distance matrix between the rows of X.
 ```
 
 
-#### Example
+### Example
 
 ```python
 import pandas as pd
@@ -406,8 +398,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']        
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']        
 ```
 
 ```python
@@ -481,7 +472,7 @@ array([[0.        , 0.92229336, 0.97058617, ..., 1.78839817, 3.60593355,
         0.        ]])
 ```
 
-### `robust_maha_dist`
+## `robust_maha_dist`
 
 ```
 Calculates the Robust Mahalanobis distance between a pair of vectors.
@@ -497,7 +488,7 @@ The Robust Mahalanobis distance between the observations `xi` and `xr`.
 ```
 
 
-#### Example
+### Example
 
 ```python
 import pandas as pd
@@ -507,8 +498,7 @@ data_url = "https://raw.githubusercontent.com/FabioScielzoOrtiz/PyDistances-demo
 
 data = pd.read_csv(data_url)
 
-quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 
-              'n_floors', 'buy_price']
+quant_cols = ['sq_mt_built', 'n_rooms', 'n_bathrooms', 'n_floors', 'buy_price']
 
 xi = data[quant_cols].iloc[2,:]
 xr = data[quant_cols].iloc[10,:]

@@ -6,4 +6,7 @@ root: intro
 chapters:
 - file: contributions
 - file: modules
+  sections:
+  - file: quantitative
+  - file: binary
 

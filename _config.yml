@@ -3,7 +3,7 @@
 
 title: PyDistances
 author: Fabio Scielzo Ortiz
-logo: images/PyDistances_logo.jpg
+logo: images/pydistances_logo.jpg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

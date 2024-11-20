@@ -2,11 +2,9 @@
 
 Data scientists address real-world problems using multivariate and heterogeneous
 datasets, characterized by multiple variables of different natures. 
-
 Selecting a suitable
 distance function between units is crucial, as many statistical techniques and
 machine learning algorithms depend on this concept. 
-
 Traditional distances, like
 classical Gower’s or Euclidean, are unsuitable for mixed-type data when underlying
 correlation or outlying observations are present, and often lead to suboptimal results.

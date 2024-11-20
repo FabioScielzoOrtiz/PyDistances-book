@@ -1,11 +1,9 @@
-# Main contributions of `PyDistances`
+# Contributions
 
-Explain here the main contributions of `PyDistances` 
+Explain here the main contributions of `PyDistances` following Girona slides and the abstracts of our papers. 
 
-Reference papers 
+Make reference to our papers.
 
-## Robust Mahalanobis (RMaha)
-
-## Generalized Gower  (G-Gower)
-
-## Related Metric Scaling (RelMS)
+ 
+ 
+ 

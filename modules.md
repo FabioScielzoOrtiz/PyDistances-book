@@ -11,7 +11,6 @@
   - `robust_maha_dist`, `robust_maha_dist_matrix`
 
 ---
----
 
 `binary`
   - `sokal_dist`, `sokal_dist_matrix`
@@ -19,12 +18,10 @@
   - `jaccard_dist`, `jaccard_dist_matrix`
 
 ---
----
 
 `multiclass`
   - `hamming_dist`, `hamming_dist_matrix`
 
----
 ---
 
 `mixed`
@@ -32,10 +29,5 @@
 
   - `RelMSDistMatrix`
 
----
----
 
-
-
- 
- 
+--- 

@@ -9,4 +9,6 @@ chapters:
   sections:
   - file: quantitative
   - file: binary
+  - file: multiclass
+  - file: mixed
 

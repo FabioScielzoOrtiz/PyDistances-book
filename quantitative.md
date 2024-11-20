@@ -373,7 +373,6 @@ mahalanobis_dist(xi=xi, xr=xr, S=S)
 
 ## `robust_maha_dist_matrix`
 
-
 ```
 Calculates the Robust Mahalanobis distance matrix for a data matrix `X` using SciPy and a robust estimation of the covariance matrix.
 

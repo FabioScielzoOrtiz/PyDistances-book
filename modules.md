@@ -2,16 +2,22 @@
 
 - `quantitative`
   - `euclidean_dist`, `euclidean_dist_matrix`
-  - d
+  - `minkowski_dist`, `minkowski_dist_matrix`
+  - `canberra_dist`, `canberra_dist_matrix`
+  - `pearson_dist_matrix`
+  - `mahalanobis_dist`, `mahalanobis_dist_matrix`
+  - `robust_maha_dist`, `robust_maha_dist_matrix`
+
 - `binary`
-  - d
-  - d
+  - `sokal_dist`, `sokal_dist_matrix`
+  - `jaccard_dist`, `jaccard_dist_matrix`
+
 - `multiclass`
-  - d
-  - d
+  - `hamming_dist`, `hamming_dist_matrix`
+
 - `mixed`
-  - d 
-  - d
+  - `GGowerDist`, `GGowerDistMatrix`
+  - `RelMSDistMatrix`
 
 
  

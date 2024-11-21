@@ -1,5 +1,10 @@
 # Quick start
 
+## Requirements 
+
+```
+
+
 ## Installation
 
 ```python
@@ -7,6 +12,8 @@ pip install PyDistances
 ```
 
 To see the available versions of the package go to the release history at https://pypi.org/project/PyDistances/#history
+
+
 
 ## Example
 

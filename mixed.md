@@ -177,8 +177,10 @@ p1 = len(quant_cols)
 p2 = len(binary_cols)
 p3 = len(multiclass_cols)
 
-ggower_dist = GGowerDist(p1=p1, p2=p2, p3=p3, d1="robust_mahalanobis", d2="jaccard", d3="hamming", 
-                         robust_method="trimmed", alpha=0.07, epsilon=0.05, n_iters=20, weights=None)
+ggower_dist = GGowerDist(p1=p1, p2=p2, p3=p3, 
+                         d1="robust_mahalanobis", d2="jaccard", d3="hamming", 
+                         robust_method="trimmed", alpha=0.07, epsilon=0.05, 
+                         n_iters=20, weights=None)
 
 ggower_dist.fit(X=data)
 
@@ -257,9 +259,10 @@ p1 = len(quant_cols)
 p2 = len(binary_cols)
 p3 = len(multiclass_cols)
 
-relms_dist_matrix = RelMSDistMatrix(p1=p1, p2=p2, p3=p3, d1="robust_mahalanobis", d2="jaccard", d3="hamming", 
-                                    robust_method="trimmed", alpha=0.07, epsilon=0.05, n_iters=20, 
-                                    weights=None)
+relms_dist_matrix = RelMSDistMatrix(p1=p1, p2=p2, p3=p3, 
+                                    d1="robust_mahalanobis", d2="jaccard", d3="hamming", 
+                                    robust_method="trimmed", alpha=0.07, epsilon=0.05, 
+                                    n_iters=20, weights=None)
 
 relms_dist_matrix.compute(X=data_pd[0:2000])
 # Warning: for the whole sample, time > 23 mins.                                      

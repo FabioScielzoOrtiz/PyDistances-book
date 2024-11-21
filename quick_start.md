@@ -55,7 +55,7 @@ scipy
 pip install PyDistances
 ```
 
-To see the available versions of the package go to the release history at https://pypi.org/project/PyDistances/#history
+To see the available versions of the package go to the release history at PyPi: https://pypi.org/project/PyDistances/#history
 
 
 

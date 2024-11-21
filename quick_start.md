@@ -6,7 +6,7 @@
 pip install PyDistances
 ```
 
-To see the available version visit to the release history at https://pypi.org/project/PyDistances/
+To see the available versions of the package go to the release history at https://pypi.org/project/PyDistances/#history
 
 ## Example
 

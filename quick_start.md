@@ -13,7 +13,7 @@ scipy
 ```
 
 
-### Module `quantitative` requirements
+### `quantitative` requirements
 
 ```
 polars
@@ -23,7 +23,7 @@ scipy
 ```
 
 
-### Module `binary` requirements
+### `binary` requirements
 
 ```
 polars
@@ -32,7 +32,7 @@ scipy
 ```
 
 
-### Module `multiclass` requirements
+### `multiclass` requirements
 
 ```
 polars
@@ -40,7 +40,7 @@ pandas
 scipy
 ```
 
-### Module `mixed` requirements
+### `mixed` requirements
 
 ```
 polars

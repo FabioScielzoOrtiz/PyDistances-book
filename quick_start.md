@@ -6,6 +6,7 @@
 
 ```python
 # Development Python Version: 3.12.0
+PyDistances
 polars
 numpy
 pandas

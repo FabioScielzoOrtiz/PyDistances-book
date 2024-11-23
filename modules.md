@@ -25,7 +25,7 @@
 ---
 
 `mixed`
-  - `GGowerDist`, `GGowerDistMatrix`
+  - `GGowerDist`, `GGowerDistMatrix`, `FastGGowerDistMatrix`
 
   - `RelMSDistMatrix`
 

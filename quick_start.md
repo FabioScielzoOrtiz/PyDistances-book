@@ -4,7 +4,7 @@
 
 ### General requirements
 
-```
+```python
 # Development Python Version: 3.12.0
 polars
 numpy
@@ -15,7 +15,7 @@ scipy
 
 ### `quantitative` requirements
 
-```
+```python
 polars
 pandas
 numpy
@@ -25,7 +25,7 @@ scipy
 
 ### `binary` requirements
 
-```
+```python
 polars
 pandas
 scipy
@@ -34,7 +34,7 @@ scipy
 
 ### `multiclass` requirements
 
-```
+```python
 polars
 pandas
 scipy
@@ -42,7 +42,7 @@ scipy
 
 ### `mixed` requirements
 
-```
+```python
 polars
 pandas
 numpy

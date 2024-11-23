@@ -131,6 +131,7 @@ random_state: the random seed used for the (random) sample elements.
 -----------        
 Fit method
 ----------- 
+
 Computes the geometric variability and covariance matrix to be used in 'compute' method, if needed.
 
 Parameters: (inputs)
@@ -190,6 +191,86 @@ ggower_dist.compute(xi=xi, xr=xr)
 1.7385809635103606
 ```
 
+## `FastGGowerDistMatrix`
+
+```
+Calculates the the Generalized Gower matrix of a sample of a given data matrix.
+
+-------------------
+Constructor method
+-------------------
+        
+Parameters: (inputs)
+-----------
+
+frac_sample_size: the sample size in proportional terms.
+
+p1, p2, p3: number of quantitative, binary and multi-class variables in the considered data matrix, respectively. Must be a non negative integer.
+
+d1: name of the distance to be computed for quantitative variables. Must be an string in ['euclidean', 'minkowski', 'canberra', 'mahalanobis', 'robust_mahalanobis']. 
+
+d2: name of the distance to be computed for binary variables. Must be an string in ['sokal', 'jaccard'].
+
+d3: name of the distance to be computed for multi-class variables. Must be an string in ['matching'].
+
+q: the parameter that defines the Minkowski distance. Must be a positive integer.
+
+robust_method: the method to be used for computing the robust covariance matrix. Only needed when d1 = 'robust_mahalanobis'.
+
+alpha : a real number in [0,1] that is used if `method` is 'trimmed' or 'winsorized'. Only needed when d1 = 'robust_mahalanobis'.
+
+epsilon: parameter used by the Delvin algorithm that is used when computing the robust covariance matrix. Only needed when d1 = 'robust_mahalanobis'.
+
+n_iters: maximum number of iterations used by the Delvin algorithm. Only needed when d1 = 'robust_mahalanobis'.
+
+fast_VG: whether the geometric variability estimation will be full (False) or fast (True).
+
+VG_sample_size: sample size to be used to make the estimation of the geometric variability.
+
+VG_n_samples: number of samples to be used to make the estimation of the geometric variability.
+
+random_state: the random seed used for the (random) sample elements.
+
+weights: the sample weights.
+
+---------------
+Compute method
+---------------
+
+Computes the Generalized Gower function for the defined sample of data.
+        
+Parameters: (inputs)
+-----------
+
+X: a pandas/polars data-frame or a numpy array. Represents a data matrix.
+```
+
+### Example
+
+```python
+fastGGower = FastGGowerDistMatrix(frac_sample_size=0.03, random_state=123, p1=p1, p2=p2, p3=p3, 
+                                  d1='robust_mahalanobis', d2='jaccard', d3='hamming', 
+                                  robust_method='trimmed', alpha=0.07, epsilon=0.05)
+
+fastGGower.compute(data_pd)
+
+fastGGower.D_GGower
+```
+```
+array([[0.        , 2.05362912, 2.1156306 , ..., 1.98033012, 1.68049866,
+        2.77877277],
+       [2.05362912, 0.        , 2.59692511, ..., 2.04280891, 3.04461163,
+        1.90396833],
+       [2.1156306 , 2.59692511, 0.        , ..., 2.43490678, 3.23741394,
+        2.74362843],
+       ...,
+       [1.98033012, 2.04280891, 2.43490678, ..., 0.        , 2.79584785,
+        1.86529973],
+       [1.68049866, 3.04461163, 3.23741394, ..., 2.79584785, 0.        ,
+        2.74932529],
+       [2.77877277, 1.90396833, 2.74362843, ..., 1.86529973, 2.74932529,
+        0.        ]])
+```
 
 ## `RelMSDistMatrix`
 

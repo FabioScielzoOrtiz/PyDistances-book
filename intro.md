@@ -13,7 +13,7 @@ In the paper ***Grané, A., Scielzo-Ortiz, F.: PyDistances: A Python package for
 data. Submitted to SORT (2024)*** robust distances for mixed-type data were defined and explored, like **robust
 Generalized Gower’s** and **robust Related Metric Scaling**, and this **new Python package** called `PyDistances` was developed, which enables to compute these robust proposals as well as classical ones.
 
-The package is located in Python Package Index (PyPI) at , a the standard repository of software for the Python programming language:  https://pypi.org/project/PyDistances/
+The package is located in Python Package Index (PyPI), the standard repository of packages for the Python programming language: https://pypi.org/project/PyDistances/
 
 ```{tableofcontents}
 ```

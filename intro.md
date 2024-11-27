@@ -1,4 +1,4 @@
-# PyDistances
+# `PyDistances`
 
 Data scientists address real-world problems using multivariate and heterogeneous
 datasets, characterized by multiple variables of different natures. 
